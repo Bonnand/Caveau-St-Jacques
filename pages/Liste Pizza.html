@@ -1,19 +1,389 @@
 <!DOCTYPE html>
  <html lang="fr">
+
   <head>
     <title>Caveau St-Jacques</title>
     <meta charset="utf-8">
     <meta name="description" content="Caveau St-Jacques">
     <meta name="url" content="https://www.CaveauStJacques.fr">
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="../styles/styles2.css">
     <link rel="icon" href="img/caveau.png">
   </head>
+
   <body>
+   <header
     <nav class='header'>
-    <h1>LeCaveau St-Jacques</h1>
+    <h1>Le Caveau St-Jacques</h1>
      <ul>
-       <li><a class='home' href="../index.html">Acceuil</a></li>
+       <li><a class='home' href="../index.html">Accueil</a></li>
      </ul>
    </nav>
-   <h1>Voici la liste de toutes les pizzas</h1>
-   <br>
+  </header>
+
+  <!-- <div class='choix'>
+    <h2>Plutôt....</h2>
+
+    <div class='BaseT'>
+     <p><a class='pagelink' href='#BaseTo'>Base Tomate</a></p>
+    </div>
+
+    <div class='ou'>
+     <p> ou </p>
+    </div>
+
+     <div class='BaseC'>
+      <p><a class='pagelink' href='#BaseCr'>Base Crème</a></p>
+    </div>
+
+  </div>  -->
+
+
+   <table border=4>
+   <thead>
+    <tr> <!-- new ligne -->
+      <th scope="col">Pizza</th>
+      <th scope="col">Description</th>
+      <th scope="col">Grande</th>
+      <th scope="col">Petite</th>
+
+    </tr>
+    </thead>
+
+  <tbody>
+
+
+    <tr>
+      <td>Royale</td>
+      <td>Tomate, épaule, champignons frais, emmental, olives</td>
+      <td class="element-positionne">12,00 €</td>
+      <td class="element-positionne">10,00 €</td>
+
+    </tr>
+
+    <tr>
+      <td>Reine</td>
+      <td>Crème fraîche, épaule, champignons, emmental, olives</td>
+      <td class="element-positionne">12,00 €</td>
+      <td class="element-positionne">10,00 €</td>
+
+    </tr>
+
+    <tr>
+      <td>Romana</td>
+      <td>Tomate, épaule, emmental</td>
+      <td class="element-positionne">11,00 €</td>
+      <td class="element-positionne">&nbsp;9,00 €</td>
+
+    </tr>
+
+    <tr>
+      <td>4 Fromages</td>
+      <td>Tomate, emmental, chèvre, raclette, parmesan</td>
+      <td class="element-positionne">12,50 €</td>
+      <td class="element-positionne">10,50 €</td>
+
+    </tr>
+
+    <tr>
+      <td>Calzone</td>
+      <td>Tomate, épaule, emmental, oeuf  &nbsp;&nbsp; (pizza fermée)</td>
+      <td class="element-positionne">12,00 €</td>
+      <td class="element-positionne">10,00 €</td>
+
+    </tr>
+
+    <tr>
+      <td>Chef</td>
+      <td>Tomate, oignons, épaule, lardons, chèvre, emmental, raclette, olives</td>
+      <td class="element-positionne">13,00 €</td>
+      <td class="element-positionne">11,00 €</td>
+
+    </tr>
+
+    <tr>
+      <td>Saint-Jacques</td>
+      <td>Crème fraîche, lardons, oignons, oeuf, emmental</td>
+      <td class="element-positionne">12,00 €</td>
+      <td class="element-positionne">10,00 €</td>
+
+    </tr>
+
+    <tr>
+      <td>Burger</td>
+      <td>Tomate, oignons, viande hachée, oeuf, emmental</td>
+      <td class="element-positionne">12,00 €</td>
+      <td class="element-positionne">10,00 €</td>
+
+    </tr>
+
+
+    <tr>
+      <td>Végétarienne</td>
+      <td>Tomate, assortiment de légumes, emmental</td>
+      <td class="element-positionne">12,00 €</td>
+      <td class="element-positionne">10,00 €</td>
+
+    </tr>
+
+    <tr>
+      <td>Paysanne</td>
+      <td>Tomate, lardons, oignons, emmental, crème fraîche</td>
+      <td class="element-positionne">12,50 €</td>
+      <td class="element-positionne">10,50 €</td>
+
+    </tr>
+
+    <tr>
+      <td>Jazz</td>
+      <td>Crème fraîche, lardons, poivrons, emmental, oeuf</td>
+      <td class="element-positionne">12,00 €</td>
+      <td class="element-positionne">10,00 €</td>
+
+    </tr>
+
+    <tr>
+      <td>Fermière</td>
+      <td>Tomate, oignons, chèvre, emmmental, crème fraîche</td>
+      <td class="element-positionne">12,00 €</td>
+      <td class="element-positionne">10,00 €</td>
+
+    </tr>
+
+    <tr>
+      <td>Victoria</td>
+      <td>Tomate, oignons, champignons frais, épaule, emmental</td>
+      <td class="element-positionne">12,00 €</td>
+      <td class="element-positionne">10,00 €</td>
+
+    </tr>
+
+    <tr>
+      <td>Hotdog</td>
+      <td>Tomate, saucisse, frites, emmental, lardons, reblochon</td>
+      <td class="element-positionne">13,00 €</td>
+      <td class="element-positionne">11,00 €</td>
+
+    </tr>
+
+    <tr>
+      <td>Chèvre</td>
+      <td>Tomate, emmental, chèvre, crème fraîche</td>
+      <td class="element-positionne">13,00 €</td>
+      <td class="element-positionne">10,00 €</td>
+
+    </tr>
+
+    <tr>
+      <td>Miel</td>
+      <td>Tomate, ,oignons, emmental, chèvre, miel</td>
+      <td class="element-positionne">13,00 €</td>
+      <td class="element-positionne">10,00 €</td>
+
+    </tr>
+
+
+
+    <tr>
+      <td>Kebab</td>
+      <td>Crème fraîche, oignons, fromage, viande kébab</td>
+      <td class="element-positionne">15,00 €</td>
+      <td class="element-positionne">13,00 €</td>
+
+    </tr>
+
+    <tr>
+      <td>Raclette</td>
+      <td>Tomate, épaule, emmental, raclette</td>
+      <td class="element-positionne">12,00 €</td>
+      <td class="element-positionne">10,00 €</td>
+
+    </tr>
+
+    <tr>
+      <td>Tartiflette</td>
+      <td>Crème fraîche, pommes de terre, emmental, lardons, reblochon</td>
+      <td class="element-positionne">13,00 €</td>
+      <td class="element-positionne">11,00 €</td>
+
+    </tr>
+
+    <tr>
+      <td>Savoyarde</td>
+      <td>Tomate, épaule, frites, emmental, raclette</td>
+      <td class="element-positionne">12,50 €</td>
+      <td class="element-positionne">10,50 €</td>
+
+    </tr>
+
+    <tr>
+      <td>Roquefort</td>
+      <td>Tomate, oignons, emmental, chèvre, Roquefort, crème fraîche</td>
+      <td class="element-positionne">13,00 €</td>
+      <td class="element-positionne">11,00 €</td>
+
+    </tr>
+
+    <tr>
+      <td>Montbéliard</td>
+      <td>Tomate, pommes de terre, emmental, montbéliard, cancoillotte</td>
+      <td class="element-positionne">13,00 €</td>
+      <td class="element-positionne">11,00 €</td>
+
+    </tr>
+
+
+
+    <tr>
+      <td>Reblochon</td>
+      <td>Tomate, emmental, reblochon, jambon cru</td>
+      <td class="element-positionne">13,00 €</td>
+      <td class="element-positionne">11,00 €</td>
+
+    </tr>
+
+    <tr>
+      <td>Epoisse</td>
+      <td>Crème fraîche, viande hâchée, champignons frais, oeuf, emmental, époisses</td>
+      <td class="element-positionne">13,00 €</td>
+      <td class="element-positionne">11,00 €</td>
+
+    </tr>
+
+    <tr>
+      <td>Opéra</td>
+      <td>Tomate, emmental, merguez, chorizo, crème fraîche</td>
+      <td class="element-positionne">12,00 €</td>
+      <td class="element-positionne">10,00 €</td>
+
+    </tr>
+
+    <tr>
+      <td>Drina</td>
+      <td>Tomate, emmental, merguez</td>
+      <td class="element-positionne">11,00 €</td>
+      <td class="element-positionne">10,00 €</td>
+
+    </tr>
+
+    <tr>
+      <td>Ornela</td>
+      <td>Tomate, emmental, chorizo</td>
+      <td class="element-positionne">12,00 €</td>
+      <td class="element-positionne">10,00 €</td>
+
+    </tr>
+
+    <tr>
+      <td>Morteau</td>
+      <td>Tomate, oignons, pommes de terre, morteau, emmental, crème moutarde</td>
+      <td class="element-positionne">13,00 €</td>
+      <td class="element-positionne">11,00 €</td>
+
+    </tr>
+
+    <tr>
+      <td>Azur</td>
+      <td>Tomate, emmental, cocktail de fruits de mer</td>
+      <td class="element-positionne">13,00 €</td>
+      <td class="element-positionne">11,00 €</td>
+
+    </tr>
+
+    <tr>
+      <td>Saumon</td>
+      <td>Tomate, oignons, pommes de terre, emmental, saumon, crème fraîche</td>
+      <td class="element-positionne">13,50 €</td>
+      <td class="element-positionne">11,50 €</td>
+
+    </tr>
+
+    <tr>
+      <td>Dom Tom</td>
+      <td>Tomate, épaules, ananas, emmental</td>
+      <td class="element-positionne">12,00 €</td>
+      <td class="element-positionne">10,00 €</td>
+
+    </tr>
+
+    <tr>
+      <td>Charcutière</td>
+      <td>Tomate, pommes de terre, emmental, raclette, jambon cru, salami, bacon, cornichons</td>
+      <td class="element-positionne">13,00 €</td>
+      <td class="element-positionne">11,00 €</td>
+
+    </tr>
+
+    <tr>
+      <td>Bacon</td>
+      <td>Tomate, bacon, emmental, cornichons</td>
+      <td class="element-positionne">12,00 €</td>
+      <td class="element-positionne">10,00 €</td>
+
+    </tr>
+
+    <tr>
+      <td>Laurette</td>
+      <td>Crème fraîche, cury, oignons, poulet, emmental, champignons frais</td>
+      <td class="element-positionne">13,00 €</td>
+      <td class="element-positionne">11,00 €</td>
+
+    </tr>
+
+
+
+    <tr>
+      <td>Napolitaine</td>
+      <td>Tomate, emmental, anchois, olives</td>
+      <td class="element-positionne">12,00 €</td>
+      <td class="element-positionne">10,00 €</td>
+
+    </tr>
+
+    <tr>
+      <td>Provençale</td>
+      <td>Tomate, emmental, poivrons, herbes de Provence</td>
+      <td class="element-positionne">12,00 €</td>
+      <td class="element-positionne">10,00 €</td>
+
+    </tr>
+
+    <tr>
+      <td>Bourguignonne</td>
+      <td>Tomate, emmental, escargots, persillade</td>
+      <td class="element-positionne">13,00 €</td>
+      <td class="element-positionne">11,00 €</td>
+
+    </tr>
+
+    <tr>
+      <td>Andouillette</td>
+      <td>Tomate, emmental, andouillette, crème moutarde</td>
+      <td class="element-positionne">12,00 €</td>
+      <td class="element-positionne"v>10,00 €</td>
+
+    </tr>
+
+    <tr>
+      <td>Gratinée</td>
+      <td>Tomate, épaule, tagliatelles, emmental, parmesan</td>
+      <td class="element-positionne">12,00 €</td>
+      <td class="element-positionne">10,00 €</td>
+
+    </tr>
+
+
+
+
+
+
+
+
+
+ </tbody>
+</table>
+
+   <p> Possibilité de changer la base de la pizza...</p>
+   <p> Les suppléments sont de 1 € chacun </p>
+
+  </body>
+</html>

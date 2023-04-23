@@ -1,0 +1,170 @@
+.classecss:before{  content : "\0000A0"; }
+
+body {
+  background-color: #392E22;
+  margin: 0;
+  padding: 0;
+}
+
+table{
+
+  width: auto;
+  border-collapse: collapse;
+  border: 3px solid #FFF8DC;
+  background-color: #FFF8DC;
+  color:#392E22;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 30px;
+  margin-top:50px;
+}
+thead{
+  color: #392E22;
+  font-size: 22px;
+  font-family: Georgia,sans-serif;
+  border: 3px solid white;
+}
+
+thead th:nth-child(1) {
+  width: 25%;
+  border: 3px solid white;
+}
+
+thead th:nth-child(2) {
+  width: 45%;
+  border: 3px solid white;
+}
+
+thead th:nth-child(3) {
+  width: 15%;
+  border: 3px solid white;
+}
+
+thead th:nth-child(4) {
+  width: 15%;
+  border: 3px solid white;
+}
+
+.element-positionne{
+  text-align: right;
+}
+
+td {
+  padding: 12px;
+  font-size: 19px;
+
+}
+
+th{
+    padding: 20px;
+    font-size: 19px;
+
+}
+
+h1 {
+  color: #392E22;
+  font-size: 32px;
+  text-align: center;
+  font-family: Georgia,sans-serif;
+  padding:0px;
+}
+
+li{
+  color: #FFF8DC;
+  font-size: 20px;
+  font-weight: 300;
+  display: inline-block;
+  text-align: center;
+  text-transform: uppercase;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 40px;
+  margin-top: 16px;
+
+}
+
+p{
+  color: #FFF8DC;
+  font-size: 22px;
+  text-align: center;
+  font-family: Georgia,sans-serif;
+  padding:0px;
+  opacity: 0.60;
+}
+header a:hover{
+  border-bottom: 3px solid #392E22;
+}
+
+header a{
+  color: #392E22;
+  font-family: Georgia,sans-serif;
+  text-decoration: none;
+  padding-bottom: 4px;
+
+}
+header{
+    border: 1px solid #392E22;
+    background-color:#FFF8DC;
+    width:100%;
+    height: 130px;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+}
+
+
+
+.BaseT{
+  background-color:#6D071A;
+  border: 1px solid #392E22;
+  margin: 40px;
+  padding: 70px;
+  display: inline-block;
+}
+.BaseT:hover {
+  background: #C0D6DF;
+  color: #FFF;
+}
+.BaseC{
+  background-color:white;
+  border: 1px solid #392E22;
+  margin: 40px;
+  padding: 70px;
+  display: inline-block;
+}
+.BaseC:hover {
+  background: #C0D6DF;
+  color: #FFF;
+}
+
+.BaseCr{
+  scroll-margin-top: -2040px;
+}
+
+.BaseTo{
+  scroll-margin-top: -40px;
+}
+
+.choix{
+  text-align: center;
+
+}
+
+.choix a{
+  color: #392E22;
+  font-family: Georgia,sans-serif;
+  text-decoration: none;
+  padding-bottom: 8px;
+}
+
+.choix p{
+  color: #392E22;
+  font-size: 32px;
+  font-family: Georgia,sans-serif;
+  padding:0px;
+}
+
+.ou{
+  display:inline-block;
+}

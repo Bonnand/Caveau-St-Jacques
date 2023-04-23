@@ -1,47 +1,21 @@
 
 body {
   background-color: #392E22;
-  font-family: 'Raleway', sans-serif;
   margin: 0;
   padding: 0;
 }
 
 
-
-#banner {
-  background-image: url("https://content.codecademy.com/courses/web-101/unit-6/htmlcss1-img_tahoe.jpeg");
-  background-size: cover;
-  background-position: bottom center;
-  height: 700px;
-  width: 100%;
-}
-
-#banner .content h1 {
-  border: 3px solid white;
-  position: relative;
-  top: 50px;
-  width: 400px;
-  margin: 0 auto;
-}
-
-#main {
-  margin: 0 auto;
-  padding: 40px;
-  text-align: center;
-  width: 400px;
-  height: 1000px;
-  overflow: scroll;
-}
-
 h1 {
   color: #392E22;
-  font-size: 42px;
-  font-weight: 600;
+  font-size: 32px;
   text-align: center;
+  font-family: Georgia,sans-serif;
+  padding:0px;
 }
 
 h2 {
-  border: 1px dotted #FFF8DC;
+  border: 3px solid #FFF8DC;
   color: #FFF8DC;
   font-size: 40px;
   line-height: 70px;
@@ -53,83 +27,218 @@ h2 {
 h3 {
   color: #FFF8DC;
   font-size: 18px;
-  font-weight: 700;
   padding: 20px 10px;
+
 }
+
 
 p {
-  color: grey;
-  font-size: 16px;
+  text-align: left;
+  color:#FFF8DC ;
+  font-size: 28px;
   line-height: 48px;
-  margin-top: 60px;
+  margin-top: 40px;
   padding: 10px 20px;
   margin-left: 2px;
+  position:absolute;
 }
 
-ul{
+.links ul{
   color: #FFF8DC;
-  margin-left:100px;
+
 
 }
-li{
+
+ .links li{
   color: #FFF8DC;
-  font-size: 26px;
-  font-weight: 500;
-  padding: 20px 40px;
+  font-size: 20px;
+  font-weight: 300;
   display: inline-block;
-  text-align: center;
+  text-transform: uppercase;
+  padding-left: 60px;
+  padding-right: 60px;
 
 }
 
-.header{
-    border: 1px dotted #FFF8DC;
+
+.links a:hover{
+  border-bottom: 3px solid #392E22;
+}
+
+.links a{
+  color: #392E22;
+  font-family: Georgia,sans-serif;
+  text-decoration: none;
+  padding-bottom: 4px;
+}
+
+header{
+    border: 1px solid #392E22;
     background-color:#FFF8DC;
-    postion: sticky;
+    width:100%;
+    height: 130px;
+    position: sticky;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+    text-align: center;
+
 }
+
+nav{
+  display: inline-block;
+
+}
+
+header .navbar{
+  display:none;
+  color: #392E22;
+  font-size: 2rem;
+  cursor: pointer;
+  position : absolute;
+  right: 20px;
+  top:70px;
+}
+
+
+.drop_menu{
+
+  height: 0;
+  position: absolute;
+  right: 0px;
+  top:130px;
+  width: 400px;
+  background:#392E22;
+  backdrop-filter: blur(10px);
+  border-radius: 1px;
+  overflow:hidden;
+  transition: width 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+}
+
+.drop_menu.open{
+  width:400px;
+  height: 1500px;
+
+}
+
+.drop_menu li{
+  font-size: 20px;
+  padding-top: 35px;
+  padding-right:2px;
+  display:flex;
+  align-items: right;
+  justify-content: center;
+  text-transform: uppercase;
+}
+
+.drop_menu ul{
+  color: #FFF8DC;
+  text-transform: bold;
+}
+
+.drop_menu a{
+   font-size: 25px;
+   color: #FFF8DC;
+}
+
+.drop_menu a:hover{
+  color:white;
+}
+
+@media(max-width:1200px){
+  nav .links {display: none;}
+  header .navbar{display:block;}
+  .nav .drop_menu{display:block;}
+}
+
+.nav .navbar{
+    display:block;
+}
+
+
 
 .img{
-  margin: 20px;
-  margin-left:100px;
-  position:relative;
-
-
-}
-
-.pull-quote {
-  margin: 0 auto;
-  width: 400px;
-}
-
-.byline {
-  border-bottom: 1px solid LightGrey;
-  border-top: 1px solid LightGrey;
-  color: DarkGrey;
-  font-size: 14px;
-  font-weight: 200;
-}
-
-.share {
-  border: 1px solid LightGrey;
-  padding: 40px 0px;
-  position: relative;
-  text-align: center;
+  top:0px;
+  left:0px;
+  margin:0px;
+  padding:0px;
   width: 100%;
 }
 
-.share a {
-  background: red;
-  border: 1px solid red;
-  border-radius: 3px;
-  color: white;
-  display: inline-block;
-  margin: 20px;
-  padding: 14px;
-  text-decoration: none;
+.img img{
+  opacity:0.45;
+  width: 100%;
 
 }
 
-.share a:hover {
-  background: white;
-  border: 1px solid red;
-  color: red;
+.img p{
+ text-align: left;
+ color:#FFF8DC ;
+ font-size: 28px;
+ line-height: 48px;
+ margin-top: 20px;
+ padding: 10px 20px;
+ margin-left: 2px;
+ margin-right: 700px;
+ position:absolute;
+ opacity: 1;
+ text-decoration: : bold;
+}
+
+.horaires{
+  scroll-margin-top: 136px;
+
+}
+
+.horaires h3{
+  text-align: left;
+
+}
+.horaires img{
+}
+
+.block_horaires{
+
+
+}
+
+.acces{
+  position: relative;
+  scroll-margin-top: -20px;
+}
+.acces img{
+  width: 100%;
+}
+
+.contact{
+   scroll-margin-top: 115px;
+}
+
+footer{
+  border: 1px solid #392E22;
+  background-color:#FFF8DC;
+  width:100%;
+  height: 490px;
+  margin-top: 50px;
+  left: 0px;
+
+}
+footer h2{
+  border: 3px solid ;
+  color:#392E22;
+  font-size: 40px;
+  line-height: 70px;
+  padding: 20px 30px;
+  margin: 30px 20px;
+  text-align: center;
+}
+
+
+footer h3{
+  color: #392E22;
+  font-size: 22px;
+  padding: 10px 10px;
+  text-align: center;
+
 }

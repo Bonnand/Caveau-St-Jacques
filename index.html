@@ -2,7 +2,11 @@
  <html lang="fr">
   <head>
     <title>Caveau St-Jacques</title>
-    <meta charset="utf-8">
+    <meta charset="utf-8"/>
+    <meta http-equip="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
     <meta name="description" content="Caveau St-Jacques">
     <meta name="url" content="https://www.CaveauStJacques.fr">
     <link rel="stylesheet" href="styles/styles.css">
@@ -10,46 +14,92 @@
   </head>
 
   <body>
-    <nav class='header'>
-    <h1>Le Caveau St-Jacques</h1>
-     <ul>
-      <li><a class='home' href="index.html">Acceuil</a></li>
-      <li><a class='pagelink' href='#horaires'>Horaires</a></li>
-      <li><a class='pagelink' href='#acces'>Accès</a></li>
-      <li><a class='pagelink' href='#contact'>Contact</a></li>
-      <li><a class='LP' href="pages/Liste Pizza.html">Liste des pizzas</a></li>
-     </ul>
-   </nav>
 
 
-    <div id="img" class='img'>
-     <p>Venez gouter les délicieuses pizzas du Caveau St-Jacques. Il y en a pour tous les goûts, de la pizza 4 fromages à la pizza tartiflette.
-     <img src="img/salle.JPG" width="300" height="400" />
-     <img src="img/façade.JPG" width="300" height="400" />
-     <img src="img/bar1.JPG" width="300" height="400" />
+    <header>
+     <h1>Le Caveau St-Jacques</h1>
+     <nav>
+      <div class='links'>
+      <ul>
+       <li><a class='home' href="index.html">Accueil</a></li>
+       <li><a class='pagelink'  href='#horaires'>Horaires</a></li>
+       <li><a class='pagelink' href='#acces'>Accès</a></li>
+       <li><a class='pagelink' href='#contact'>Contact</a></li>
+       <li><a class='LP' href="pages/Liste Pizza.html">Liste des pizzas</a></li>
+      </ul>
+      </div>
+      <div class='navbar'>
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <div class="drop_menu">
+        <li><a class='home' href="index.html">Accueil</a></li>
+        <li><a class='pagelink' onclick="scrollToSection('#horaires')" href='#horaires'>Horaires</a></li>
+        <li><a class='pagelink'  onclick="scrollToSection('#acces')" href='#acces'>Accès</a></li>
+        <li><a class='pagelink'  onclick="scrollToSection('#contact')" href='#contact'>Contact</a></li>
+        <li><a class='LP' href="pages/Liste Pizza.html">Liste des pizzas</a></li>
+      </div>
+    </nav>
+   </header>
+
+   <script>
+     const navbar = document.querySelector('.navbar')
+     const navbarIcon = document.querySelector('.navbar i')
+     const dropDownMenu = document.querySelector('.drop_menu')
+
+     navbar.onclick = function(){
+       dropDownMenu.classList.toggle('open')
+       const isOpen = dropDownMenu.classList.contains('open')
+
+       navbarIcon.classList = isOpen
+         ? 'fa-solid fa-xmark'
+         : 'fa-solid fa-bars'
+     }
+
+     </script>
+     <script>
+     // Fonction pour déplacer à la section souhaitée
+    function scrollToSection(sectionId) {
+    // Utilisation de la méthode scrollTo pour déplacer à la section
+    document.querySelector(sectionId).scrollIntoView({behavior: 'auto'}); // Option pour un défilement fluide});
+    // Utilisation de la méthode location.reload pour rafraîchir la page
+    setTimeout(function() {
+      location.reload();
+    }, 1);
+  }
+   </script>
+
+
+    <div id="img" class="img">
+  <!--    <p>Venez gouter les délicieuses pizzas du
+        Caveau St-Jacques. Il y en a pour tous les goûts, de la pizza 4 fromages à la
+          pizza tartiflette.</p>  -->
+     <img src="img/salle2mdf.JPG" />
     </div>
 
 
-    <div id="horaires" class='horaires'>
+    <div id="horaires" class="horaires">
       <h2>Horaires</h2>
-       <h3>Du Mardi au Dimanche 19h00 - 21h30</h3>
-       <h3>Ouvert les jours fériés</h3>
+      <div class="block_horaires">
+        <h3>Du Mardi au Dimanche 19h00 - 23h30</h3>
+        <h3>Ouvert les jours fériés</h3>
+    <!--    <img src="img/façade2mdf.JPG" width="300" height="300" />  -->
+      </div>
     </div>
 
 
-    <div id="acces" class='acces'>
+    <div id="acces" class="acces">
       <h2>Localisation</h2>
       <img src="img/Localisation.png" />
     </div>
 
 
-    <div id="contact" class='contact'>
+    <footer id="contact" class="contact">
       <h2>Contact</h2>
        <h3>03 80 21 75 05</h3>
-       <h3>lc.bonnand@free.fr</h3>
+       <h3>laure.bonnand@free.fr</h3>
        <h3>5 Bis Rue du Faubourg Saint-Jacques</h3>
        <h3>21200 BEAUNE</h3>
-    </div>
+    </footer>
 
 
 
