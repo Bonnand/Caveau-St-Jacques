@@ -112,12 +112,13 @@ header .navbar{
   backdrop-filter: blur(10px);
   border-radius: 1px;
   overflow:hidden;
+
 }
 
 
 .drop_menu.open{
   width:400px;
-  height: 3500px;
+  height: 2500px;
 
 }
 
