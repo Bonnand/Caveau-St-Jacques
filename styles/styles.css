@@ -118,7 +118,7 @@ header .navbar{
 
 .drop_menu.open{
   width:400px;
-  height: 2500px;
+  height: 100vh;
 
 }
 
