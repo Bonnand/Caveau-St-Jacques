@@ -8,7 +8,7 @@ body {
 
 table{
 
-  width: auto;
+  width: 95vw;
   border-collapse: collapse;
   border: 3px solid #FFF8DC;
   background-color: #FFF8DC;
@@ -17,6 +17,7 @@ table{
   margin-right: 15px;
   margin-bottom: 30px;
   margin-top:50px;
+
 }
 thead{
   color: #392E22;
@@ -113,7 +114,11 @@ header{
     z-index: 10;
 }
 
+.tab{
+  justify-content: center;
+  display: flex;
 
+}
 
 .BaseT{
   background-color:#6D071A;
